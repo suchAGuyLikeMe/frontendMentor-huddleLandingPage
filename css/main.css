@@ -1,0 +1,193 @@
+:root {
+    /*=================
+    colors
+    =================*/
+
+    /*=================
+    primary colors
+    =================*/
+
+    --primary-violet: hsl(257, 40%, 49%);
+    --primary-soft-magenta: hsl(300, 69%, 71%);
+
+    /*=================
+    neutral colors
+    =================*/
+    --neurtral-white: hsl(0, 100%, 100%);
+
+    /*=================
+    typography
+    =================*/
+
+    /*=================
+    headings
+    =================*/
+
+    --font-family-headings: "Poppins", sans-sarif;
+    --weight-400: 400;
+    --weight-600: 600;
+
+    /*[Poppins](https://fonts.google.com/specimen/Poppins)*/
+
+    /*=================
+    body
+    =================*/
+
+    /*400 weight for the body aswell*/
+    --font-family-body: "Open Sans", sans-sarif;
+
+    /*[Open Sans](https://fonts.google.com/specimen/Open+Sans)*/
+
+    /*=================
+    icons
+    =================*/
+    /*
+    For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+    - [Font Awesome](https://fontawesome.com/)
+    - [IcoMoon](https://icomoon.io/)
+    - [Ionicons](https://ionicons.com/)
+    */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--neurtral-white);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary-violet) url(../img/bg-mobile.svg) no-repeat;
+    background-size: contain;
+
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.img-logo {
+    max-width: 50%;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+p,
+button {
+    font-family: var(--font-family-body);
+}
+
+h1 {
+    font-family: var(--font-family-headings);
+    font-size: x-large;
+    letter-spacing: 0.1ch;
+}
+
+p {
+    padding: 0 0.2rem;
+}
+
+button {
+    width: 60%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 0rem;
+    color: var(--primary-violet);
+}
+
+.img-social-icon {
+    border-radius: 50%;
+    outline: 1px solid var(--neurtral-white);
+    outline-offset: 5px;
+    fill: var(--neurtral-white);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    width: 15%;
+}
+
+/*=====================
+hover and active states
+=====================*/
+button:hover,
+button:focus {
+    background-color: var(--primary-soft-magenta);
+    color: var(--neurtral-white);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s cubic-bezier(0, 0.2, 0.5, 3) 0s;
+}
+
+.img-social-icon:hover,
+.img-social-icon:focus {
+    fill: var(--primary-soft-magenta);
+    outline-color: var(--primary-soft-magenta);
+    transition: transform 0.3s cubic-bezier(0, 0.2, 0.5, 3) 0s;
+}
+
+@media (width > 37.5em) and (height < 64em) {
+    main {
+        background: var(--primary-violet) url(../img/bg-desktop.svg) no-repeat;
+        background-size: cover;
+        display: block;
+        padding: 3rem 5rem;
+    }
+
+    .img-logo {
+        display: block;
+        margin-bottom: 5rem;
+    }
+
+    .img-designs {
+        float: left;
+        max-width: 50%;
+        margin-right: 5rem;
+    }
+
+    h1,
+    p {
+        text-align: start;
+    }
+
+    h1 {
+        padding-top: 1.8rem;
+        font-size: xx-large;
+    }
+
+    p {
+        padding: 1rem 3.5rem 1rem 0;
+    }
+
+    button {
+        width: 20%;
+    }
+
+    ul {
+        position: absolute;
+        right: 5rem;
+        bottom: 3rem;
+    }
+
+    li {
+        margin-right: 1.5rem;
+    }
+}
