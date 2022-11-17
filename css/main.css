@@ -57,13 +57,15 @@
 }
 
 body {
+    background: var(--primary-violet) url(../img/bg-mobile.svg) no-repeat;
+    background-size: contain;
     color: var(--neurtral-white);
+    font-size: 1rem;
 }
 
 main {
     width: 100vw;
     height: 100vh;
-    background: var(--primary-violet) url(../img/bg-mobile.svg) no-repeat;
     background-size: contain;
 
     padding: 0 2rem;
@@ -75,6 +77,11 @@ main {
 
 .img-logo {
     max-width: 50%;
+}
+
+.img-designs {
+    width: 90%;
+    margin: 0 auto;
 }
 
 h1,
@@ -145,9 +152,12 @@ button:focus {
 }
 
 @media (width > 37.5em) and (height < 64em) {
-    main {
+    body {
         background: var(--primary-violet) url(../img/bg-desktop.svg) no-repeat;
         background-size: cover;
+    }
+
+    main {
         display: block;
         padding: 3rem 5rem;
     }
@@ -183,11 +193,11 @@ button:focus {
 
     ul {
         position: absolute;
-        right: 5rem;
+        right: 4rem;
         bottom: 3rem;
     }
 
     li {
-        margin-right: 1.5rem;
+        margin: 0 1.5rem 0.5rem 0;
     }
 }
