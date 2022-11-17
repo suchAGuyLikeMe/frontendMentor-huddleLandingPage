@@ -137,6 +137,7 @@ hover and active states
 =====================*/
 button:hover,
 button:focus {
+    outline: 0;
     background-color: var(--primary-soft-magenta);
     color: var(--neurtral-white);
     cursor: pointer;
@@ -144,8 +145,7 @@ button:focus {
     transition: transform 0.3s cubic-bezier(0, 0.2, 0.5, 3) 0s;
 }
 
-.img-social-icon:hover,
-.img-social-icon:focus {
+.img-social-icon:hover {
     fill: var(--primary-soft-magenta);
     outline-color: var(--primary-soft-magenta);
     transition: transform 0.3s cubic-bezier(0, 0.2, 0.5, 3) 0s;
