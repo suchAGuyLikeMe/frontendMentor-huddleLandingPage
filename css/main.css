@@ -27,16 +27,12 @@
     --weight-400: 400;
     --weight-600: 600;
 
-    /*[Poppins](https://fonts.google.com/specimen/Poppins)*/
-
     /*=================
     body
     =================*/
 
     /*400 weight for the body aswell*/
     --font-family-body: "Open Sans", sans-sarif;
-
-    /*[Open Sans](https://fonts.google.com/specimen/Open+Sans)*/
 
     /*=================
     icons
