@@ -22,14 +22,15 @@
     </head>
     <body>
         <main>
-            <img class="img-logo" src="img/logo.svg" alt="logo" />
+            <img class="img-logo" src="img/logo.svg" alt="huddle logo" />
 
             <img
                 class="img-designs"
                 src="img/illustration-mockups.svg"
-                alt="" />
+                alt=""
+                aria-hidden="true" />
 
-            <h1>
+            <h1 aria>
                 Build The Community
                 <br />
                 Your Fans Will Love
@@ -41,15 +42,22 @@
                 users as you engage in genuine discussion.
             </p>
 
-            <button type="submit">Register</button>
+            <a href="#" class="btnRegister" title="Register to Huddle">
+                Register
+            </a>
 
             <ul>
                 <li>
-                    <a href="#" target="_blank" aria-label="Facebook">
+                    <a href="#" target="_blank">
                         <svg
+                            role="img"
+                            aria-labelledby="facebook-title"
                             class="img-social-icon"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 320 512">
+                            <title id="facebook-title">
+                                Follow on Facebook
+                            </title>
                             <!--! Font Awesome Pro 6.2.1 by @fontawesome 
                             - https://fontawesome.com License 
                             - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -60,11 +68,14 @@
                 </li>
 
                 <li>
-                    <a href="#" target="_blank" aria-label="Twitter">
+                    <a href="#" target="_blank">
                         <svg
+                            role="img"
+                            aria-labelledby="twitter-title"
                             class="img-social-icon"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512">
+                            <title id="twitter-title">Follow on Twitter</title>
                             <!--! Font Awesome Pro 6.2.1 by @fontawesome 
                             - https://fontawesome.com License 
                             - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -75,11 +86,16 @@
                 </li>
 
                 <li>
-                    <a href="#" target="_blank" aria-label="Instagram">
+                    <a href="#" target="_blank">
                         <svg
+                            role="img"
+                            aria-labelledby="instagram-title"
                             class="img-social-icon"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512">
+                            <title id="instagram-title">
+                                Follow on Instagram
+                            </title>
                             <!--! Font Awesome Pro 6.2.1 by @fontawesome 
                             - https://fontawesome.com License 
                             - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
